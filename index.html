@@ -1,0 +1,64 @@
+<!DOCTYPE>
+<html>
+
+<head>
+
+    <title>Clicker hero</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="style/main.css">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <script src="js/clickerHeroGame.js"></script>
+</head>
+
+<body>
+
+    <div class="space"></div>
+    <div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a onclick="weaponOne()" id="weapon1" class=" textStore">Weapon 1 *100-COINS* <img src="img/cursor1.png" width="20%"></a>
+            <a onclick="weaponTwo()" id="weapon2" class="textStore">Weapon 2 *200-COINS* <img src="img/cursor2.png" width="20%"></a>
+            <a onclick="weaponThree()" id="weapon3" class="textStore">Weapon 3 *300-COINS*</a>
+            <a onclick="weaponFour()" id="weapon4" class="textStore">Weapon 4 *400-COINS*</a>
+            <h3 class="stats">Coins: <span id="coins">0</span> <img src="img/coins.png" width="10%"></h3>
+        </div>
+        <span style="font-size:30px;cursor:pointer" class="text" onclick="abrir()">&#9776; STORE</span>
+
+        <h1 class="title" >Clicker Hero!</h1>
+        <h1 class="title">Clicker Hero!</h1>
+        <h1 class="title">Clicker Hero!</h1>
+        <div class="cloud x1"></div>
+        <!-- prueba -->
+        <div class="cloud x2"></div>
+        <div class="cloud x3"></div>
+        <div class="cloud x4"></div>
+        <div class="cloud x5"></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 text-center">
+                <div id="wrapper">
+                    <img draggable="false" class="monsterImg3 hurt weapon0" id="monster" onclick="attack()" src="img/monster.png" alt="monster">
+                    <br>
+                    <br>
+                    <br>
+                    <h2 id="monster-level">Monster Level 1</h2>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <h3 class="stats">Damage: <span id="damage">0</span></h3>
+                <h3 class="stats">Health: <span id="health">100</span></h3>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
